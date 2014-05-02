@@ -1,0 +1,41 @@
+###|conky|###
+alignment tl
+minimum_size 180
+maximum_width 300
+gap_x 133
+gap_y 565
+background yes
+use_spacer right
+border_width 1
+draw_borders yes
+default_outline_color black
+draw_outline no
+default_shade_color black
+draw_shades yes
+double_buffer yes
+no_buffers yes
+on_bottom yes
+own_window yes
+own_window_type desktop
+own_window_transparent yes
+own_window_hints undecorated,sticky,below,skip_taskbar,skip_pager
+use_xft yes
+xftfont sofachrome:size=10
+uppercase no
+override_utf8_locale yes
+cpu_avg_samples 2
+net_avg_samples 2
+update_interval 1
+total_run_times 0
+default_color 303030
+
+TEXT
+${color 888888}${voffset -2}${font sofachrome-11}to-do list${font}${color 555555}
+- truck tire
+- update gps
+- fix wxradio
+- camp tent
+- snoseal
+- logo gfx
+- pen & pad
+- watercolors
