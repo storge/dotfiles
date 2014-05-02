@@ -1,0 +1,65 @@
+###:conky:###
+alignment tl
+maximum_width 244
+minimum_size 100
+gap_x 12
+gap_y 78
+background yes
+use_spacer left
+border_width 1
+draw_borders yes
+default_color 333333
+default_outline_color black
+draw_outline no
+default_shade_color black
+draw_shades yes
+double_buffer yes
+no_buffers yes
+on_bottom yes
+own_window yes
+own_window_type desktop
+own_window_transparent yes
+own_window_hints undecorated,sticky,below,skip_taskbar,skip_pager
+use_xft yes
+xftfont Inconsolata:size=8.5
+uppercase no
+override_utf8_locale yes
+cpu_avg_samples 2
+net_avg_samples 2
+update_interval 1
+total_run_times 0
+
+TEXT
+${color dddddd} ::   s y s t e m   ::
+${color 999999} w+spc       main menu
+${color 999999} w+tab     client menu
+${color 999999} w+f      file manager
+${color 999999} w+t          terminal
+${color 999999} w+e            editor
+${color 999999} w+w       web browser
+${color 999999} w+h      task manager
+${color 999999} w+l       lock screen
+${color 999999} w+v       volume ctrl
+${color 999999} w+arrow   grow window
+${color 999999} w+a+arrow    aerosnap
+${color 999999} w+c+arrow    move 5px
+${color 999999} a+f2      run program
+${color 999999} a+f3         alt menu
+${color 333333}${hr 1}
+${color dddddd} ::     t m u x     ::
+${color 999999} c+b      command mode
+${color 999999} c+b " -    split vert
+${color 999999} c+b % |    split horz
+${color 999999} c+b x       kill pane
+${color 999999} c+b o       next pane
+${color 999999} c+b q    pane indexes
+${color 999999} c+b !   breakout pane
+${color 999999} c+b :     tmux prompt
+${color 999999} c+b c   create window
+${color 999999} c+b n     next window
+${color 999999} c+b p     prev window
+${color 999999} c+b 0..9  pick window
+${color 999999} c+b f   search prompt
+${color 999999} c+b D   choose detach
+${color 999999} c+b s   choose attach
+${color 999999} c+b ?   show keybinds 

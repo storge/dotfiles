@@ -1,0 +1,47 @@
+###:conky:###
+alignment br
+maximum_width 1000
+minimum_size 800
+gap_x 8
+gap_y 60
+background yes
+use_spacer left
+border_width 1
+draw_borders no
+default_outline_{color} black
+draw_outline no
+default_shade_{color} black
+draw_shades no
+double_buffer yes
+no_buffers yes
+on_bottom yes
+own_window yes
+own_window_type desktop
+own_window_transparent yes
+own_window_hints undecorated,sticky,below,skip_taskbar,skip_pager
+use_xft yes
+xftfont Inconsolata:size=8.5
+uppercase no
+override_utf8_locale yes
+cpu_avg_samples 2
+net_avg_samples 2
+update_interval 1
+total_run_times 0
+default_color 888888
+
+TEXT
+${color}:  [    s y s t e m    ]  :  [    s c r e e n    ]  :  [      t m u x      ]  :  [     f i n c h     ]  :  [      c m u s      ]  :  [     q u a k e     ]  :
+${color}:  alt+f2       run menu  :  ctrl+a  commmand mode  :  ctrlC+b   for command  :  alt+a      availables  :  z         player prev  :  $$xx     show alias xx  :
+${color}:  alt+f3       alt menu  :  ^a c    create window  :  "          split vert  :  alt+n     next window  :  x         player play  :  $$xx hi!   reply to xx  :
+${color}:  sup+spc     main menu  :  ^a A      name window  :  %          split horz  :  alt+p     prev window  :  c        player pause  :  :delete $$xx    delete  :
+${color}:  sup+tab   client menu  :  ^a w     list windows  :  !           jump pane  :  alt+w     list window  :  v         player stop  :  :retweet $$xx  retweet  :
+${color}:  sup+f    file manager  :  ^a 0-9  select window  :  x           kill pane  :  alt+c    close window  :  b         player next  :  :recent $$xx  timeline  :
+${color}:  sup+t        terminal  :  ^a s   split win horz  :  o           next pane  :  alt+m     move window  :  n         search next  :  :recent $$xx/list list  :
+${color}:  sup+x          logout  :  ^a |   split win vert  :  q        pane indexes  :  alt+.     ^move right  :  m          toggle aaa  :  :search hash   search  :
+${color}:  sup+e          editor  :  ^a M   monitor window  :  :         tmux prompt  :  alt+,     ^ move left  :  s      toggle shuffle  :  :reconnect  reconnect  :
+${color}:  sup+w     web browser  :  ^a tab  change region  :  c       create window  :  alt+l  refresh window  :  r       toggle repeat  :  :restart      restart  :
+${color}:  sup+h    task manager  :  ^a X      kill region  :  n         next window  :  alt+1 2...0   jump to  :  o  toggle play_sorted  :  :thread $$xx    thread  :
+${color}:  sup+l     lock screen  :  ^a Q     hide regions  :  p         prev window  :  alt+tab   jump urgent  :  ^L            refresh  :  :config   show config  :
+${color}:  sup+m    media player  :  ^a d   detach session  :  D       choose detach  :  alt+q            quit  :  -/=    volume -10/+10  :  :filter keyword words  :
+${color}:  sup+v     volume ctrl  :  ^a r   attach session  :  s       choose attach  :  alt+s  workplace list  :  [/]  volume +1/0|0/+1  :  :filter user    users  :
+${color}:  prntscr  print screen  :  ^a ?    show keybinds  :  ?       show keybinds  :  alt+/   show keybinds  :  {/}  volume -1/0|0/-1  :  :filter off    normal  :

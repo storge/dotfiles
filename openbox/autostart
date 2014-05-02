@@ -1,0 +1,30 @@
+eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
+hsetroot -fill /usr/local/share/bg/bggrid.png &
+(\
+#nitrogen --restore && \
+cb-compositor --start && \
+sleep 2s && \
+conky -q -c ~/.conk/cb1420-net3-sf-grey && \
+conky -q -c ~/.conk/cb1420-date-sf-grey && \
+conky -q -c ~/.conk/cb1420-wup3-sf-grey && \
+conky -q -c ~/.conk/cb1420-wxABQ2-sf-grey && \
+conky -q -c ~/.conk/cb1420-batt3-sf-grey && \
+tint2 \
+) &
+(sleep 2s && pnmixer) &
+xfce4-volumed &
+xfce4-power-manager &
+if egrep -iq 'touchpad' /proc/bus/input/devices; then
+    synclient VertEdgeScroll=1 &
+    synclient TapButton1=1 &
+fi
+xrdb -merge ~/.Xresources &
+(sleep 3s && clipit) &
+xset r rate 250 25 &
+xset b off &
+# setxkbmap -option grp:shifts_toggle,compose:caps,kpdl:dot,terminate:ctrl_alt_bksp,us,us_intl,gb,de,fr,es &
+# see man xkeyboard-config for complete options
+cb-cowpowers &
+xscreensaver -no-splash &
+(sleep 10s && cb-welcome --firstrun) &
+(sleep 60s && ~/.dropbox-dist/dropboxd) &

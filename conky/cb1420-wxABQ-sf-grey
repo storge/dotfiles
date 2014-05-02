@@ -1,0 +1,36 @@
+###|conky|###
+alignment tr
+minimum_size 240
+maximum_width 250
+gap_x 00
+gap_y 24
+background yes
+use_spacer right
+border_width 1
+draw_borders no
+default_outline_color black
+draw_outline no
+default_shade_color black
+draw_shades yes
+double_buffer yes
+no_buffers yes
+on_bottom yes
+own_window yes
+own_window_type desktop
+own_window_transparent yes
+own_window_hints undecorated,sticky,below,skip_taskbar,skip_pager
+use_xft yes
+xftfont sofachrome:size=11
+uppercase no
+override_utf8_locale yes
+cpu_avg_samples 2
+net_avg_samples 2
+update_interval 1
+total_run_times 0
+default_color 777777
+
+TEXT
+${color cccccc}${font sofachrome-32}${voffset -00}${alignr}${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KABQ temperature 15}${font}
+${color 777777}${font sofachrome-14}${voffset -38}       temp${font}
+${color 999999}${font sofachrome-12}${voffset -5}        elsius${font}
+${color 999999}${font sofachrome-22x}${voffset -33}  C${font}

@@ -1,0 +1,14 @@
+### DEBIAN
+deb http://http.debian.net/debian jessie main contrib non-free
+deb http://http.debian.net/debian wheezy main contrib non-free
+### DEBIAN SECURITY
+deb http://security.debian.org/ jessie/updates main non-free
+deb http://security.debian.org/ wheezy/updates main non-free
+### BACKPORTS
+deb http://ftp.debian.org/debian jessie-backports main non-free
+deb http://ftp.debian.org/debian wheezy-backports main non-free
+### CRUNCHBANG (pinned low)
+deb http://packages.crunchbang.org/waldorf waldorf main
+### LIQUORIX (liquorix kernels)
+### apt-get install '^liquorix-([^-]+-)?keyring.?'
+deb http://liquorix.net/debian sid main

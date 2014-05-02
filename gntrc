@@ -1,0 +1,67 @@
+[general]
+mouse = 1
+small-button = true
+
+[GntWM::binding]
+a-n = window-next
+a-p = window-prev
+a-c = window-close
+a-w = window-list
+a-d = dump-screen
+a-, = shift-left
+a-. = shift-right
+a-a = action-list
+a-m = start-move
+a-r = start-resize
+a-q = wm-quit
+a-l = refresh-screen
+
+[GntTree::binding]
+up = move-up
+down = move-down
+c-n = move-down
+c-p = move-up
+pageup = page-up
+pagedown = page-down
+
+[Workspace-1]
+name = blist
+window-names = buddylist;debug-window
+
+[Workspace-2]
+name = IM
+window-names = chat-window
+window-titles = preferences;pounce
+
+[Finch]
+color-available = green
+color-away = blue
+color-idle = gray
+color-offline = red
+color-message-sent = cyan; default
+color-message-received = red; default
+color-message-highlight = black; green
+color-message-action = yellow; default
+color-timestamp = blue; default
+#See below for details on color
+
+[colors]
+# RGB values range 0 to 1000
+black = 0; 0; 0
+red = 1000; 0; 0
+green = 0; 1000; 0
+blue = 250; 250; 700
+white = 1000; 1000; 1000
+gray = 700; 700; 700
+darkgray = 256; 256; 256
+
+[colorpairs]
+normal = white; default
+highlight = blue; default
+highlightd = red; default
+shadow = black; darkgray
+title = default; blue
+titled = red; default
+text = white; default
+disabled = gray; darkred
+urgent = yellow; default

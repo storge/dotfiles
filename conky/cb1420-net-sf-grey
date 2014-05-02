@@ -1,0 +1,37 @@
+
+###|conky|###
+alignment bl
+minimum_size 610
+maximum_width 801
+gap_x 296
+gap_y 5
+background yes
+use_spacer right
+border_width 1
+draw_borders no
+default_outline_color black
+draw_outline no
+default_shade_color black
+draw_shades yes
+double_buffer yes
+no_buffers yes
+on_bottom yes
+own_window yes
+own_window_type desktop
+own_window_transparent yes
+own_window_hints undecorated,sticky,below,skip_taskbar,skip_pager
+use_xft yes
+xftfont sofachrome:size=11
+uppercase no
+override_utf8_locale yes
+cpu_avg_samples 2
+net_avg_samples 2
+update_interval 1
+total_run_times 0
+default_color 777777
+
+TEXT
+${color 222222}${voffset -0}${upspeedgraph wlan0 18,686 222222 444444 -l}
+${color}${voffset -20}   upspeed    ${color aaaaaa}${upspeed wlan0}
+${color 222222}${voffset -0}${downspeedgraph wlan0 18,686 222222 4444444 -l}
+${color}${voffset -20}   downspeed  ${color a0a0a0}${downspeed wlan0}

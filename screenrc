@@ -1,0 +1,78 @@
+## original author: 	Seth House <seth@eseth.com>
+## edited by:		storge
+
+###|Messages|####################################################################
+nethack on              # be careful! new screen tonight.
+sorendition "kg"        # makes screen messages stand out, black on green
+msgwait 2               # default message display is too long
+startup_message off     # who needs it anyway.
+version                 # echo version on startup
+
+###|Misc|########################################################################
+autodetach on           # A.K.A. the "save your bacon" option
+altscreen on            # full-screen programs (less, vim) cleared once quit
+vbell off               # visual bells are hard to do right. screen's isn't good
+defutf8 on              # allow utf characters
+defnonblock 5
+defflow off             # try to disable flow control (buggy)
+bind s                  # free ctrl-s
+                        # Also put this in your shell startup file:
+                        # tty > /dev/null && stty -ixon -ixoff
+
+###|Scroll-back mode|############################################################
+ignorecase on           # case insensitive search in scroll-back mode
+defscrollback 9999      # default scroll-back buffer is tiny. (no. of lines.)
+bufferfile $HOME/.screen-exchange  # keep the buffer exchange file out of /tmp
+
+###|Enable 256 Colors|######(http://frexx.de/xterm-256-notes/)###################
+term screen-256color
+
+###|Create windows on startup|###################################################
+screen -t cmus		# window 0
+screen -t irssi		# window 1
+screen -t finch		# window 2
+screen -t bash		# window 3
+screen -t zsh		# window 4
+select 0		# default window = window 0
+
+###|Hardstatus|##################################################################
+## adds tabs and allows for status info on the right to be pushed off if need be.
+hardstatus alwayslastline "%{gk}@%H  %{ck}SCREEN:[ %{ck}%?%-Lw%?%{yk}%n*%f %t%?(%u)%?%{ck}%?%+Lw ]%=  %{gk}%D %{gk}%Y%m%d %{gk}%0c "
+
+## hardstatus legend:
+#       %      the escape character itself
+#       a      either 'am' or 'pm'
+#       A      either 'AM' or 'PM'
+#       c      current time HH:MM in 24h format
+#       C      current time HH:MM in 12h format
+#       d      day number
+#       D      weekday name
+#       f      flags of the window
+#       F      sets %? to true if the window has the focus
+#       h      hardstatus of the window
+#       H      hostname of the system
+#       l      current load of the system
+#       m      month number
+#       M      month name
+#       n      window number
+#       s      seconds
+#       t      window title
+#       u      all other users on this window
+#       w      all window numbers and names. With '-'  quailifier:  up  to  the
+#              current  window;  with  '+'  qualifier: starting with the window
+#       W      all window numbers and names except the current one
+#       y      last two digits of the year number
+#       Y      full year number
+## The following colors are known:
+#       k      black
+#       r      red
+#       g      green
+#	y      yellow
+#	b      blue
+#	m      magenta
+#	c      cyan
+#	w      white
+#	d      default color
+#	.      leave color unchanged
+## For more info: ~> info screen "String Escapes"
+## EOF

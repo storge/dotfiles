@@ -1,0 +1,8 @@
+include ~/.newsbeuter/newsbeuter.storge.colors
+auto-reload yes
+browser iceweasel %u
+bind-key o open-in-browser-and-mark-read
+refresh-on-startup yes
+reload-time 60
+reload-threads 2
+show-keymap-hint no

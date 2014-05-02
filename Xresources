@@ -1,0 +1,243 @@
+! after editing run: xrdb -merge ~/.Xresources
+!== xdefaults ==========
+! xdefaults
+Xft.autohint: 		1
+Xft.antialias: 		1
+Xft.hinting: 		true
+Xft.hintstyle: 		hintslight
+Xft.dpi: 		96
+Xft.rgba: 		rgb
+Xft.lcdfilter: 		lcddefault
+
+!== xterm ==============
+xterm*title: 		xterm
+xterm*termName:		xterm
+xterm*loginShell:       true
+xterm*faceName: 	xft:Inconsolata:size=8
+xterm*geometry: 	120x50
+xterm*utf8:		1
+xterm*transparency:	true
+xterm*selectToClipboard: true
+xterm*cutNewline: 	false
+xterm*on4Clicks: 	group
+xterm*on5Clicks: 	page
+xterm*internalBorder: 	1
+xterm*background: 	#181818
+xterm*foreground: 	light grey
+xterm*metaSendsEscape: 	true
+xterm*colorBD: 		#ffffff
+xterm*colorBDMode: 	false
+xterm*cursorBlink: 	false
+xterm*cursorColor: 	#e2baf1
+!xterm*veryBoldColors: 	14
+xterm*dynamiccolors: 	true
+xterm*charClass: 	33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48,35:48,58:48,63:48,61:48,44:48,38:48,59:48
+xterm*jumpScroll: 	true
+xterm*multiScroll: 	true
+xterm*saveLines: 	4096
+xterm*TitleBar:         off
+xterm*iconPixmap:	/usr/share/pixmaps/shellicon2.xbm
+
+!== xvt ==============
+xvt*title:            xterm
+xvt*termName:         xterm
+xvt*loginShell:       true
+!xvt*faceName:         xft:Inconsolata:size=8
+xvt*font:             -*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
+xvt*geometry:         80x20
+xvt*utf8:             1
+xvt*transparent:      true
+xvt*selectToClipboard: true
+xvt*shading:          92
+xvt*scrollBar:        false
+!xvt*scrollBar_right:  true
+xvt*transpscrollbar:  true
+xvt*cutNewline:       false
+xvt*on4Clicks:        group
+xvt*on5Clicks:        page
+xvt*internalBorder:   1
+xvt*background:       #181818
+xvt*foreground:       light grey
+xvt*metaSendsEscape:  true
+xvt*colorBD:          #ffffff
+xvt*colorBDMode:      false
+xvt*cursorBlink:      false
+xvt*cursorColor:      #e2baf1
+!xvt*veryBoldColors:  14
+xvt*dynamiccolors:    true
+xvt*charClass:        33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48,35:48,58:48,63:48,61:48,44:48,38:48,59:48
+xvt*jumpScroll:       true
+xvt*multiScroll:      true
+xvt*saveLines:        4096
+xvt*TitleBar:         off
+xvt*scrollTtyKeypress:true
+xvt*scrollTtyOutput:  false
+xvt*allowC1Printable: true
+xvt*iconPixmap:       /usr/share/pixmaps/shellicon2.xbm
+
+!== aterm ==============
+aterm*title:            xterm
+aterm*termName:         xterm
+aterm*loginShell:       true
+!aterm*faceName:         xft:Inconsolata:size=8
+aterm*font:             -*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
+aterm*geometry:         120x20
+aterm*utf8:             1
+aterm*transparent:     	true
+aterm*selectToClipboard: true
+aterm*shading:		92
+aterm*scrollBar:	false
+!aterm*scrollBar_right:  true
+aterm*transpscrollbar:  true
+aterm*cutNewline:       false
+aterm*on4Clicks:        group
+aterm*on5Clicks:        page
+aterm*internalBorder:   1
+aterm*metaSendsEscape:  true
+aterm*colorBD:          #ffffff
+aterm*colorBDMode:      false
+aterm*cursorBlink:      false
+aterm*cursorColor:      #555599
+!aterm*veryBoldColors:  14
+aterm*dynamiccolors:    true
+aterm*toolBar:          false
+aterm*borderwidth:      0
+aterm*charClass:        33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48,35:48,58:48,63:48,61:48,44:48,38:48,59:48
+aterm*dynamicColors:    true
+aterm*jumpScroll:       true
+aterm*multiScroll:      true
+aterm*saveLines:        4096
+aterm*TitleBar:         off
+aterm*scrollTtyKeypress:true
+aterm*scrollTtyOutput:  false
+aterm*allowC1Printable: true
+aterm*iconPixmap:       /usr/share/pixmaps/shellicon2.xbm
+aterm*foreground        : #999999
+aterm*background        : #000000
+aterm*color0            : #2e3436
+aterm*color1            : #5eff00
+aterm*color2            : #a82974
+aterm*color3            : #3971b4
+aterm*color4            : #99cc33
+aterm*color5            : #ff5800
+aterm*color6            : #fffd00
+aterm*color7            : #444444
+aterm*color8            : #d37dcf
+aterm*color9            : #96c041
+aterm*color10           : #ff00bb
+aterm*color11           : #ff5800
+aterm*color12           : #ff9100
+aterm*color13           : #ff9100
+aterm*color14           : #3971b4
+aterm*color15           : #3971b4
+
+!== urxvt ==============
+urxvt.depth:		32
+urxvt.buffered:		true
+urxvt.geometry:		120x20
+urxvt.background:       rgba:0000/0000/0000/2222
+urxvt.foreground:	#c0c0c0
+urxvt.underlineColor:	#005f87
+urxvt.highlightColor:	#aaaaaa
+urxvt.highlightTextColor: white
+urxvt.cursorColor: 	green
+urxvt.cursorColor2:	green
+urxvt.reverseVideo:	false
+urxvt.jumpScroll:	false
+urxvt.skipScroll:	false
+urxvt.fading:		15
+urxvt.fadeColor:	#444444
+urxvt.scrollColor:	#333333
+urxvt.troughColor:	#222222
+urxvt.borderColor:	#111111
+urxvt.font:		xft:Inconsolata:size=9
+urxvt.boldFont:		xft:Inconsolata:size=9
+urxvt.ItalicFont:	xft:Inconsolata:size=9
+urxvt.boldItalicFont:	xft:Inconsolata:size=9
+urxvt.letterSpace: 	-2
+urxvt.intensityStyles:	true
+urxvt.title:		urxvt
+urxvt.iconName:		urxvt
+urxvt.mapAlert:		false
+urxvt.urgentOnBell:	false
+urxvt.visualBell:	false
+urxvt.loginShell:	true
+urxvt.utmpInhibit:	true
+urxvt.print-pipe:	cat > $(TMPDIR=$HOME mktemp urxvt.XXXXXX)
+urxvt.scrollstyle:	plain
+urxvt.thickness:	1
+urxvt.scrollBar:	false
+urxvt.scrollBar_left:	false
+urxvt.scrollBar_right:	false
+urxvt.saveLines:	4096
+urxvt.internalBorder:	0
+urxvt.externalBorder:	0
+urxvt.borderLess:	true
+urxvt.skipBuiltinGlyphs:	true
+urxvt.termName: 	rxvt-unicode-256color
+urxvt.lineSpace:	0
+urxvt.meta8:		false
+urxvt.mouseWheelScrollPage: 	false
+urxvt.cursorBlink:	true
+urxvt.cursorUnderline:	true
+urxvt.pointerBlank:	false
+urxvt.pointerColor:	green
+!urxvt.pointerColor2:	cyan
+urxvt.pointerBlankDelay:2
+urxvt.ImLocale:		en_US.utf8
+urxvt.tripleclickwords:	true
+urxvt.transparent:	false
+!urxvt.tintColor:	white
+!urxvt.inheritPixmap: 	
+urxvt.shading:		90
+urxvt.blurRadius:	3x3
+urxvt.perl-ext-common:	default,matcher,vtwheel,clipboard
+urxvt.urlLauncher:	/usr/bin/midori
+urxvt.matcher.button:	1
+urxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+urxvt.colorUL: 		#4682B4
+urxvt.iconFile: 	/usr/share/icons/oxygen/48x48/apps/utilities-terminal.png
+urxvt.color0	: rgb:00/00/00
+urxvt.color1	: rgb:bb/00/00
+urxvt.color2	: rgb:00/aa/00
+urxvt.color3	: rgb:ff/b8/00
+urxvt.color4	: rgb:04/3a/6b
+urxvt.color5	: rgb:72/21/7d
+urxvt.color6	: rgb:00/63/63
+urxvt.color7	: rgb:be/be/be
+urxvt.color8	: rgb:66/66/66
+urxvt.color9	: rgb:d7/00/00
+urxvt.color10	: rgb:55/ff/55
+urxvt.color11	: rgb:ff/ff/55
+urxvt.color12	: rgb:97/a4/f7
+urxvt.color13	: rgb:ff/55/ff
+urxvt.color14	: rgb:55/ff/ff
+urxvt.color15	: rgb:ee/ee/ee
+! urxvt info: http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod#RESOURCES
+
+!== xscreensaver ========
+!font settings
+xscreensaver.Dialog.headingFont:        -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:         #aaaaaa
+xscreensaver.Dialog.background:         #060606
+xscreensaver.Dialog.topShadowColor:     #000000
+xscreensaver.Dialog.bottomShadowColor:  #000000
+xscreensaver.Dialog.Button.foreground:  #cccccc
+xscreensaver.Dialog.Button.background:  #2f2f2f
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #cccccc
+xscreensaver.Dialog.text.background:    #1f1f1f
+xscreensaver.Dialog.internalBorderWidth:20
+xscreensaver.Dialog.borderWidth:        1
+xscreensaver.Dialog.shadowThickness:    2
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:  #3a3a3a
+xscreensaver.passwd.thermometer.background:  #030303
+xscreensaver.passwd.thermometer.width:       20

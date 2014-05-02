@@ -1,0 +1,33 @@
+###|conky|###
+alignment tl
+minimum_size 700
+maximum_width 1000
+gap_x 6
+gap_y 24
+background yes
+use_spacer right
+border_width 1
+draw_borders no
+default_outline_color black
+draw_outline no
+default_shade_color black
+draw_shades yes
+double_buffer yes
+no_buffers yes
+on_bottom yes
+own_window yes
+own_window_type desktop
+own_window_transparent yes
+own_window_hints undecorated,sticky,below,skip_taskbar,skip_pager
+use_xft yes
+xftfont sofachrome:size=32
+uppercase no
+override_utf8_locale yes
+cpu_avg_samples 2
+net_avg_samples 2
+update_interval 1
+total_run_times 0
+default_color 777777
+
+TEXT
+${color cccccc}${time %Y}.${color bbbbbb}${time %m}.${color aaaaaa}${time %d}.${color 999999}${time %H}.${color 888888}${time %M}.${color 777777}${time %S}
