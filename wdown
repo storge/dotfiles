@@ -1,0 +1,13 @@
+#!/bin/bash
+# put this in /usr/local/bin/ as per FHS
+echo "[1]  stopping wpa supplicant"		&&
+rm /var/run/wpa_supplicant/wlan0   		&&
+kill $(pgrep wpa_supplicant)			&&
+PID=$(pgrep dhcpcd)                             &&
+echo "[2]  killing dhcpcd PID $PID"		&&
+kill $PID					&&
+echo "[3]  killing all dhcpcd PIDs"             &&
+kill $(pgrep dhcpcd)				&&
+echo "[4]  bringing down dev wlan0"  		&&
+ip link set wlan0 down		  		&&
+echo "[  wireless network is down  ]"
